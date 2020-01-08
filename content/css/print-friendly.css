@@ -1,0 +1,25 @@
+
+
+@media print {
+    header, #header {
+        display: none;
+    }
+
+    footer, #footer {
+        display: none;
+    }
+
+    .no-print, .no-print * {
+        display: none;
+    }
+
+    .force-print, .force-print * {
+        display: block;
+    }
+
+    /* This fixes an issue where Firefox prints out URLs on the page */
+    a:link:after,
+    a:visited:after {
+        content: "" !important;
+    }
+}
